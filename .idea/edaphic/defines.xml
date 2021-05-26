@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SVCompilerDirectivesDefines">
+    <option name="defines">
+      <map>
+        <entry key="$PROJECT_DIR$/define.v">
+          <value>
+            <map>
+              <entry key="ALU_ADD">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="240" />
+                      <option name="replacementList" value="4'b0010" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ALU_AND">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="192" />
+                      <option name="replacementList" value="4'b0000" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ALU_OPTION_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="145" />
+                      <option name="replacementList" value="4" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ALU_OR">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="216" />
+                      <option name="replacementList" value="4'b0001" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ALU_SLT">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="288" />
+                      <option name="replacementList" value="4'b0111" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ALU_SUB">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="264" />
+                      <option name="replacementList" value="4'b0110" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="DATA_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="50" />
+                      <option name="replacementList" value="32" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="INST_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="28" />
+                      <option name="replacementList" value="32" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="PC_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="8" />
+                      <option name="replacementList" value="32" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="REGS_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="97" />
+                      <option name="replacementList" value="5" />
+                      <option name="source" value="$PROJECT_DIR$/define.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/instruction_decoder.v">
+          <value>
+            <map>
+              <entry key="A_OPTION_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="55" />
+                      <option name="replacementList" value="2" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="A_REGS">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="105" />
+                      <option name="replacementList" value="0" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="B_OPTION_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="80" />
+                      <option name="replacementList" value="2" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="B_REGS">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="122" />
+                      <option name="replacementList" value="0" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="EXE_ALU">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="139" />
+                      <option name="replacementList" value="1" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT3_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2812" />
+                      <option name="replacementList" value="(31-7-5-5):(31-7-5-5-2)" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT7_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2695" />
+                      <option name="replacementList" value="(31):(31-6)" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_ADD">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2955" />
+                      <option name="replacementList" value="{3'b000, 4'b0000, 3'b000}" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_AND">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3291" />
+                      <option name="replacementList" value="{3'b111, 4'b0000, 3'b000}" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_OR">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3243" />
+                      <option name="replacementList" value="{3'b110, 4'b0000, 3'b000}" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_SLL">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3051" />
+                      <option name="replacementList" value="{3'b001, 4'b0000, 3'b000}" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_SRA">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3195" />
+                      <option name="replacementList" value="{3'b101, 4'b0000, 3'b000}" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_SRL">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3147" />
+                      <option name="replacementList" value="{3'b101, 4'b0000, 3'b000}" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_SUB">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3003" />
+                      <option name="replacementList" value="{3'b000, 4'b0100, 3'b000}" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_XOR">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3099" />
+                      <option name="replacementList" value="{3'b100, 4'b0000, 3'b000}" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="IN_EXE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="4781" />
+                      <option name="replacementList" value="0    // 表示这个数据目前在execution阶段" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="IN_MEM">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="4829" />
+                      <option name="replacementList" value="1    // 表示这个数据目前在memory access阶段" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="I_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2077" />
+                      <option name="replacementList" value="3'b001" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="MEM_ALU">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="157" />
+                      <option name="replacementList" value="2" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="MEM_READ">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="175" />
+                      <option name="replacementList" value="3" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_I_ARITHMETIC">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2406" />
+                      <option name="replacementList" value="7'b0010011" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_JALR">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2447" />
+                      <option name="replacementList" value="7'b1100111" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_LOAD">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2328" />
+                      <option name="replacementList" value="7'b0000011" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2233" />
+                      <option name="replacementList" value="6:0" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_R_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2258" />
+                      <option name="replacementList" value="7'b0110011" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_SB_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2571" />
+                      <option name="replacementList" value="7'b1100111" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_S_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2500" />
+                      <option name="replacementList" value="7'b0100011" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_UJ_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2660" />
+                      <option name="replacementList" value="7'b1101111" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_U_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2616" />
+                      <option name="replacementList" value="7'b0110111" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2210" />
+                      <option name="replacementList" value="7" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="RD_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2861" />
+                      <option name="replacementList" value="(31-7-5-5-3):(31-7-5-5-3-4)" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="RS1_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2732" />
+                      <option name="replacementList" value="(31-7):(31-7-4)" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="RS2_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2770" />
+                      <option name="replacementList" value="(31-7-5):(31-7-5-4)" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="R_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2051" />
+                      <option name="replacementList" value="3'b000" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="SB_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2129" />
+                      <option name="replacementList" value="3'b011" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="S_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2103" />
+                      <option name="replacementList" value="3'b010" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="TYPE_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2026" />
+                      <option name="replacementList" value="3" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="UJ_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2182" />
+                      <option name="replacementList" value="3'b101" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="U_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2156" />
+                      <option name="replacementList" value="3'b100" />
+                      <option name="source" value="$PROJECT_DIR$/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+        <entry key="/instruction_decoder.v">
+          <value>
+            <map>
+              <entry key="A_OPTION_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="55" />
+                      <option name="replacementList" value="2" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="A_REGS">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="105" />
+                      <option name="replacementList" value="0" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="B_OPTION_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="80" />
+                      <option name="replacementList" value="2" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="B_REGS">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="122" />
+                      <option name="replacementList" value="0" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="EXE_ALU">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="139" />
+                      <option name="replacementList" value="1" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT3_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2822" />
+                      <option name="replacementList" value="(31-7-5-5):(31-7-5-5-2)" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT7_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2705" />
+                      <option name="replacementList" value="(31):(31-6)" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_ADD">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2965" />
+                      <option name="replacementList" value="{3'b000, 4'b0000, 3'b000}" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_AND">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3301" />
+                      <option name="replacementList" value="{3'b111, 4'b0000, 3'b000}" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_OR">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3253" />
+                      <option name="replacementList" value="{3'b110, 4'b0000, 3'b000}" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_SLL">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3061" />
+                      <option name="replacementList" value="{3'b001, 4'b0000, 3'b000}" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_SRA">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3205" />
+                      <option name="replacementList" value="{3'b101, 4'b0000, 3'b000}" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_SRL">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3157" />
+                      <option name="replacementList" value="{3'b101, 4'b0000, 3'b000}" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_SUB">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3013" />
+                      <option name="replacementList" value="{3'b000, 4'b0100, 3'b000}" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="FUNCT_XOR">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="3109" />
+                      <option name="replacementList" value="{3'b100, 4'b0000, 3'b000}" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="IN_EXE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="4791" />
+                      <option name="replacementList" value="0    // 表示这个数据目前在execution阶段" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="IN_MEM">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="4839" />
+                      <option name="replacementList" value="1    // 表示这个数据目前在memory access阶段" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="I_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2087" />
+                      <option name="replacementList" value="3'b001" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="MEM_ALU">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="157" />
+                      <option name="replacementList" value="2" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="MEM_READ">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="175" />
+                      <option name="replacementList" value="3" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_I_ARITHMETIC">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2416" />
+                      <option name="replacementList" value="7'b0010011" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_JALR">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2457" />
+                      <option name="replacementList" value="7'b1100111" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_LOAD">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2338" />
+                      <option name="replacementList" value="7'b0000011" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2243" />
+                      <option name="replacementList" value="6:0" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_R_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2268" />
+                      <option name="replacementList" value="7'b0110011" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_SB_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2581" />
+                      <option name="replacementList" value="7'b1100111" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_S_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2510" />
+                      <option name="replacementList" value="7'b0100011" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_UJ_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2670" />
+                      <option name="replacementList" value="7'b1101111" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_U_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2626" />
+                      <option name="replacementList" value="7'b0110111" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="OP_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2220" />
+                      <option name="replacementList" value="7" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="RD_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2871" />
+                      <option name="replacementList" value="(31-7-5-5-3):(31-7-5-5-3-4)" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="RS1_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2742" />
+                      <option name="replacementList" value="(31-7):(31-7-4)" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="RS2_RANGE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2780" />
+                      <option name="replacementList" value="(31-7-5):(31-7-5-4)" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="R_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2061" />
+                      <option name="replacementList" value="3'b000" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="SB_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2139" />
+                      <option name="replacementList" value="3'b011" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="S_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2113" />
+                      <option name="replacementList" value="3'b010" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="TYPE_WIDTH">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2036" />
+                      <option name="replacementList" value="3" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="UJ_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2192" />
+                      <option name="replacementList" value="3'b101" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="U_TYPE">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="2166" />
+                      <option name="replacementList" value="3'b100" />
+                      <option name="source" value="/instruction_decoder.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="dependencies">
+      <map>
+        <entry key="ALU_ADD">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/ALU.v" />
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ALU_AND">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/ALU.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ALU_OPTION_WIDTH">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/ALU.v" />
+              <option value="$PROJECT_DIR$/execution.v" />
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ALU_OR">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/ALU.v" />
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ALU_SLT">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/ALU.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ALU_SUB">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/ALU.v" />
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="A_OPTION_WIDTH">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="A_REGS">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="B_OPTION_WIDTH">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="B_REGS">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DATA_WIDTH">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/execution.v" />
+              <option value="$PROJECT_DIR$/ALU.v" />
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="EXE_ALU">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="FUNCT3_RANGE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="FUNCT7_RANGE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="FUNCT_ADD">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="FUNCT_OR">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="FUNCT_SUB">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="INST_WIDTH">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_fetch.v" />
+              <option value="$PROJECT_DIR$/IF_ID_latch.v" />
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="IN_EXE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="IN_MEM">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MEM_ALU">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MEM_READ">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OP_I_ARITHMETIC">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OP_LOAD">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OP_RANGE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OP_R_TYPE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OP_SB_TYPE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OP_S_TYPE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OP_UJ_TYPE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OP_U_TYPE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PC_WIDTH">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_fetch.v" />
+              <option value="$PROJECT_DIR$/IF_ID_latch.v" />
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RD_RANGE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="REGS_WIDTH">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RS1_RANGE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RS2_RANGE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/instruction_decoder.v" />
+              <option value="/instruction_decoder.v" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="version" value="755" />
+  </component>
+</project>

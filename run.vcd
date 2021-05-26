@@ -1,0 +1,273 @@
+$date
+	Wed May 26 09:15:20 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test_instruction_decoder $end
+$var wire 1 ! is_write_regs_future $end
+$var wire 1 " is_write_MEM_future $end
+$var wire 1 # is_stall $end
+$var wire 4 $ ALU_option [3:0] $end
+$var wire 32 % ALU_B [31:0] $end
+$var wire 32 & ALU_A [31:0] $end
+$var reg 1 ' clk $end
+$var reg 32 ( instruction [31:0] $end
+$var reg 1 ) is_write_regs $end
+$var reg 32 * pc [31:0] $end
+$var reg 1 + rst $end
+$var reg 5 , write_address [4:0] $end
+$var reg 32 - write_data [31:0] $end
+$scope module instruction_decoder $end
+$var wire 32 . EXE_ALU_result [31:0] $end
+$var wire 32 / MEM_ALU_result [31:0] $end
+$var wire 32 0 MEM_read_result [31:0] $end
+$var wire 1 ' clk $end
+$var wire 1 1 cpu_en $end
+$var wire 32 2 instruction [31:0] $end
+$var wire 1 ) is_write_regs $end
+$var wire 32 3 pc [31:0] $end
+$var wire 1 + rst $end
+$var wire 5 4 write_address [4:0] $end
+$var wire 32 5 write_data [31:0] $end
+$var wire 32 6 rs2_data [31:0] $end
+$var wire 5 7 rs2_address [4:0] $end
+$var wire 32 8 rs1_data [31:0] $end
+$var wire 5 9 rs1_address [4:0] $end
+$var wire 5 : rd_address [4:0] $end
+$var wire 1 ! is_write_regs_future $end
+$var wire 1 " is_write_MEM_future $end
+$var wire 1 # is_stall $end
+$var wire 1 ; is_MEM_forward_ALU_B $end
+$var wire 1 < is_MEM_forward_ALU_A $end
+$var wire 32 = immediate [31:0] $end
+$var wire 3 > branch_option [2:0] $end
+$var wire 3 ? B_option [2:0] $end
+$var wire 3 @ A_option [2:0] $end
+$var wire 4 A ALU_option [3:0] $end
+$var reg 32 B ALU_A [31:0] $end
+$var reg 32 C ALU_B [31:0] $end
+$var reg 32 D branch_pc [31:0] $end
+$var reg 1 E is_branch $end
+$scope module controller $end
+$var wire 32 F EXE_ALU_result [31:0] $end
+$var wire 32 G MEM_ALU_result [31:0] $end
+$var wire 32 H MEM_read_result [31:0] $end
+$var wire 1 ' clk $end
+$var wire 1 1 cpu_en $end
+$var wire 32 I instruction [31:0] $end
+$var wire 1 + rst $end
+$var wire 5 J rs2_address [4:0] $end
+$var wire 5 K rs1_address [4:0] $end
+$var wire 5 L rd_address [4:0] $end
+$var reg 4 M ALU_option [3:0] $end
+$var reg 3 N A_option [2:0] $end
+$var reg 3 O B_option [2:0] $end
+$var reg 3 P branch_option [2:0] $end
+$var reg 32 Q immediate [31:0] $end
+$var reg 1 R is_MEM_read_to_regs_future $end
+$var reg 1 S is_read_rs1 $end
+$var reg 1 T is_read_rs2 $end
+$var reg 1 # is_stall $end
+$var reg 1 " is_write_MEM_future $end
+$var reg 1 ! is_write_regs_future $end
+$upscope $end
+$scope module registers $end
+$var wire 1 ' clk $end
+$var wire 1 1 cpu_en $end
+$var wire 1 ) is_write_regs $end
+$var wire 5 U rs1_address [4:0] $end
+$var wire 5 V rs2_address [4:0] $end
+$var wire 1 + rst $end
+$var wire 5 W write_address [4:0] $end
+$var wire 32 X write_data [31:0] $end
+$var wire 32 Y rs2_data [31:0] $end
+$var wire 32 Z rs1_data [31:0] $end
+$var integer 32 [ i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100000 [
+b0 Z
+b0 Y
+bx X
+bx W
+b0 V
+b0 U
+0T
+0S
+0R
+bx Q
+b0 P
+b100 O
+b100 N
+bx M
+b0 L
+b0 K
+b0 J
+b0 I
+bz H
+bz G
+bz F
+0E
+bx D
+bx C
+bx B
+bx A
+b100 @
+b100 ?
+b0 >
+bx =
+0<
+0;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+bx 5
+bx 4
+b0 3
+b0 2
+11
+bz 0
+bz /
+bz .
+bx -
+bx ,
+0+
+b0 *
+x)
+b0 (
+0'
+bx &
+bx %
+bx $
+0#
+x"
+0!
+$end
+#20
+b11 D
+b11 %
+b11 C
+b11 &
+b11 B
+b11 =
+b11 Q
+b10 $
+b10 A
+b10 M
+1S
+1!
+1'
+b11 7
+b11 J
+b11 V
+b11 :
+b11 L
+b1100000000000110010011 (
+b1100000000000110010011 2
+b1100000000000110010011 I
+#40
+b0 &
+b0 B
+b0 @
+b0 N
+0'
+#60
+b1100100 D
+b1100100 %
+b1100100 C
+b1100100 =
+b1100100 Q
+1R
+1'
+b11 9
+b11 K
+b11 U
+b100 7
+b100 J
+b100 V
+b1 :
+b1 L
+b110010000011010000010000011 (
+b110010000011010000010000011 2
+b110010000011010000010000011 I
+#80
+bz &
+bz B
+b1 @
+b1 N
+0'
+#100
+0R
+1'
+b1 9
+b1 K
+b1 U
+b10 :
+b10 L
+b110010000001000000100010011 (
+b110010000001000000100010011 2
+b110010000001000000100010011 I
+#120
+1<
+b101 @
+b101 N
+0'
+#140
+1T
+1'
+b10 7
+b10 J
+b10 V
+b1000001000000100110011 (
+b1000001000000100110011 2
+b1000001000000100110011 I
+#160
+0<
+bz %
+bz C
+b1 ?
+b1 O
+b11 @
+b11 N
+0'
+#180
+1'
+b0 9
+b0 K
+b0 U
+b0 7
+b0 J
+b0 V
+b0 :
+b0 L
+b0 (
+b0 2
+b0 I
+#200
+b0 %
+b0 C
+b0 &
+b0 B
+b0 ?
+b0 O
+b0 @
+b0 N
+0'
+#220
+1'
+#240
+0'
+#260
+1'
+#280
+0'
