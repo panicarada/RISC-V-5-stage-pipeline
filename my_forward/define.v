@@ -67,16 +67,24 @@
 `define FUNCT3_LD 3'b011
 
 
+// rs1 / rs2 option选项
+`define RS1_OPTION_WIDTH 3
+`define RS2_OPTION_WIDTH 3
+`define RS1_REGS 0
+`define RS2_REGS `RS1_REGS
+`define EXE_ALU_FORWARD_ID 1 // execution中alu结果
+`define MEM_ALU_FORWARD_ID 2 // memory access保存的alu结果
+`define MEM_READ_FORWARD_ID 3 // memory access读取到的结果
+`define MEM_READ_FORWARD_MEM 4 // 比如load rs2, ?()后面紧接着save rs2, ?()时，rs2的值得从memory读取forward到memory的输入《write data》
+
+
 // A_option / B_option的选项
-`define A_OPTION_WIDTH 3
-`define B_OPTION_WIDTH 3
-`define A_REGS 0
-`define B_REGS 0
-`define EXE_ALU 1
-`define MEM_ALU 2
-`define MEM_READ 3
-`define IMMEDIATE 4   // immediate
-`define MEM_READ_FORWARD_EXE 5 // read memory access forward to execution
+// 即参与ALU计算的值来源
+`define A_OPTION_WIDTH 2
+`define B_OPTION_WIDTH 2
+`define REGS 0 // 用寄存器读取的值
+`define IMMEDIATE 1 // 立即数
+`define MEM_READ_FORWARD_EXE 2 // memory读取到的数据forward到execution
 
 
 `define FUNCT3_ADDI 3'b000

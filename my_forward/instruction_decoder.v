@@ -49,6 +49,7 @@ module instruction_decoder (
 
     wire [`A_OPTION_WIDTH - 1 : 0] A_option; // 选择作为ALU输入的A
     wire [`B_OPTION_WIDTH - 1 : 0] B_option; // 选择作为ALU输入的B
+    
     wire [`BRANCH_OPTION_WIDTH - 1 : 0] branch_option; // 选择跳转类型
 
 
