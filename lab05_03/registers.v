@@ -28,7 +28,7 @@ module registers (
     assign rs1_data = (rs1_address == 0) ? 0 : registers[rs1_address];
     assign rs2_data = (rs2_address == 0) ? 0 : registers[rs2_address];
 
-    always @(negedge clk) begin // 下降沿写
+    always @(posedge clk) begin // 上升沿写
         if (rst) begin
             for (i = 1;i < 32; i = i + 1) registers[i] <= 0;
         end
