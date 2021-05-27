@@ -120,7 +120,7 @@ module controller (
                 ALU_B_option = 0;
                 ALU_option = 0;
             end
-            `OP_JAL: begin
+            `OP_JALR: begin
                 // jalr，要跳转到rs1 + immediate
                 mem_to_regs_option = `MEM_TO_REGS_OPTION_PC_4;
                 instruction_type = `INST_TYPE_JALR;

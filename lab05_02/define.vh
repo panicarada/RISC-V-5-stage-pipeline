@@ -22,7 +22,8 @@
 `define INST_TYPE_S 2
 `define INST_TYPE_SB 3
 `define INST_TYPE_U 4
-`define INST_TYPE_UJ 5
+`define INST_TYPE_JAL 5
+`define INST_TYPE_JALR 6
 
 // op code编码
 `define OP_WIDTH 7
@@ -40,7 +41,7 @@
 // lui
 `define OP_U_TYPE 7'b0110111
 // jal
-`define OP_UJ_TYPE 7'b1101111
+`define OP_JAL 7'b1101111
 
 
 // ALU的B输入来源选择
@@ -50,13 +51,14 @@
 
 // ALU操作选择
 `define ALU_OPTION_WIDTH 3
-`define ALU_OPTION_ADD 0
-`define ALU_OPTION_SUB 1
-`define ALU_OPTION_SLL 2
-`define ALU_OPTION_SRL 3
-`define ALU_OPTION_AND 4
-`define ALU_OPTION_OR 5
-`define ALU_OPTION_XOR 6
+`define ALU_OPTION_ADD 0 // A + B
+`define ALU_OPTION_SUB 1 // A - B
+`define ALU_OPTION_SLL 2 // A << B[4:0]
+`define ALU_OPTION_SRL 3 // A >> B[4:0]
+`define ALU_OPTION_AND 4 // A & B
+`define ALU_OPTION_OR 5 // A | B
+`define ALU_OPTION_XOR 6 // A ^ B
+`define ALU_OPTION_SLT 7 // 1 if A < B else 0
 
 
 
@@ -67,6 +69,7 @@
 `define BRANCH_TYPE_BEQ 1
 `define BRANCH_TYPE_BNE 2
 `define BRANCH_TYPE_JAL 3
+`define BRANCH_TYPE_JALR 4
 
 
 // 区别各个R指令的{funct3, instruction[30]}
@@ -87,3 +90,17 @@
 
 // 区别各个load指令的funct3
 `define FUNCT3_LW {3'b010}
+
+// MEM阶段数据送到instruction decoder阶段的选项
+`define MEM_TO_REGS_OPTION_WIDTH 2
+`define MEM_TO_REGS_OPTION_ALU 0 // ALU运算结果
+`define MEM_TO_REGS_OPTION_MEM_READ 1 // 从data memory读取的值
+`define MEM_TO_REGS_OPTION_PC_4 2 // 比如jal / jalr指令，把pc_4写入rd
+`define MEM_TO_REGS_OPTION_IMM 3 // lui指令，把20位立即数放到rd高位，第12位补0
+
+// sb指令区分
+`define FUNCT3_BEQ 3'b000
+`define FUNCT3_BNE 3'b001
+
+
+`define NOP 32'h00000013 // addi x0, x0, 0  空指令

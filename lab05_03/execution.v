@@ -42,6 +42,7 @@ module ALU (
     output reg [`DATA_WIDTH - 1 : 0] result,
     output is_zero // 结果是否为0
 );
+
     // 组合电路
     always @(*) begin
         case (ALU_option)
@@ -49,6 +50,11 @@ module ALU (
             `ALU_OPTION_SUB: result = A - B;
             `ALU_OPTION_AND: result = A & B;
             `ALU_OPTION_OR : result = A | B;
+            `ALU_OPTION_XOR: result = A ^ B;
+            `ALU_OPTION_SLL: result = A << B[4 : 0];
+            `ALU_OPTION_SRL: result = A >> B[4 : 0];
+            `ALU_OPTION_SLT: result = (A < B) ? 1 : 0;
+            default: result = 0;
         endcase
     end
     assign is_zero = (result == 0) ? 1'b1 : 1'b0;

@@ -27,6 +27,8 @@ module instruction_decoder (
 
     output [`BRANCH_TYPE_WIDTH - 1 : 0] branch_type,
 
+    output [`MEM_TO_REGS_OPTION_WIDTH - 1 : 0] mem_to_regs_option, // MEM阶段数据送到instruction decoder阶段的选项
+
     output is_write_mem_future, // 是否要写入DM
     output is_write_regs_future // 是否要写入寄存器
 );
@@ -67,7 +69,9 @@ module instruction_decoder (
         .branch_type(branch_type),
         
         .is_write_mem_future(is_write_mem_future),
-        .is_write_regs_future(is_write_regs_future)
+        .is_write_regs_future(is_write_regs_future),
+
+        .mem_to_regs_option(mem_to_regs_option)
     );
 
     immediate_generator immediate_generator (
