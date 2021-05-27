@@ -5,8 +5,11 @@ module EXE_reg_MEM (
     input cpu_en,
     input rst,
 
-    input [`PC_WIDTH - 1 : 0] in_branch_pc,
+    input [`PC_WIDTH - 1 : 0] in_branch_pc, // (pc + immediate)
     input [`PC_WIDTH - 1 : 0] in_pc_4,
+    input [`PC_WIDTH - 1 : 0] in_pc, // 当前指令对应的pc
+    input [`INST_WIDTH - 1 : 0] in_instruction,
+
     input [`REGS_WIDTH - 1 : 0] in_rd_address,
     input in_is_zero,
     input [`DATA_WIDTH - 1 : 0] in_ALU_result,
@@ -20,6 +23,9 @@ module EXE_reg_MEM (
 
     output reg [`PC_WIDTH - 1 : 0] out_branch_pc,
     output reg [`PC_WIDTH - 1 : 0] out_pc_4,
+    output reg [`PC_WIDTH - 1 : 0] out_pc, // 当前指令对应的pc
+    output reg [`INST_WIDTH - 1 : 0] out_instruction,
+
     output reg [`REGS_WIDTH - 1 : 0] out_rd_address,
     output reg out_is_zero,
     output reg [`DATA_WIDTH - 1 : 0] out_ALU_result,
@@ -34,6 +40,8 @@ module EXE_reg_MEM (
     initial begin
         out_branch_pc = 0;
         out_pc_4 = 0;
+        out_pc = 0;
+        out_instruction = 0;
         out_rd_address = 0;
         out_is_zero = 0;
         out_ALU_result = 0;
@@ -42,7 +50,6 @@ module EXE_reg_MEM (
         out_is_write_mem_future = 0;
         out_is_write_regs_future = 0;
         out_mem_to_regs_option = 0;
-
         out_immediate = 0;
     end
     always @(posedge clk or posedge rst) begin
@@ -57,7 +64,7 @@ module EXE_reg_MEM (
             out_is_write_mem_future <= 0;
             out_is_write_regs_future <= 0;
             out_mem_to_regs_option <= 0;
-
+            out_instruction <= 0;
             out_immediate <= 0;
         end
         else if (cpu_en) begin
@@ -73,6 +80,7 @@ module EXE_reg_MEM (
             out_mem_to_regs_option <= in_mem_to_regs_option;
 
             out_immediate <= in_immediate;
+            out_instruction <= in_instruction;
         end
     end
 

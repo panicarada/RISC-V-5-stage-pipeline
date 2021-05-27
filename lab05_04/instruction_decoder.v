@@ -30,10 +30,13 @@ module instruction_decoder (
     output [`MEM_TO_REGS_OPTION_WIDTH - 1 : 0] mem_to_regs_option, // MEM阶段数据送到instruction decoder阶段的选项
 
     output is_write_mem_future, // 是否要写入DM
-    output is_write_regs_future // 是否要写入寄存器
+    output is_write_regs_future, // 是否要写入寄存器
+
+    output [`REGS_WIDTH - 1 : 0] rs1_address,
+    output [`REGS_WIDTH - 1 : 0] rs2_address
 );
-    wire [`REGS_WIDTH - 1 : 0] rs1_address;
-    wire [`REGS_WIDTH - 1 : 0] rs2_address;
+    // wire [`REGS_WIDTH - 1 : 0] rs1_address;
+    // wire [`REGS_WIDTH - 1 : 0] rs2_address;
     assign rd_address = instruction[`RD_RANGE];
     assign rs1_address = instruction[`RS1_RANGE];
     assign rs2_address = instruction[`RS2_RANGE];

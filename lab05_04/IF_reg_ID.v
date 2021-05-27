@@ -5,6 +5,9 @@ module IF_reg_ID (
     input cpu_en,
     input rst,
 
+    // stall控制信号
+    input is_nop_IF_ID,
+
     // from instruction fetch
     input [`PC_WIDTH - 1 : 0] in_pc,
     input [`INST_WIDTH - 1 : 0] in_instruction,
@@ -26,6 +29,11 @@ module IF_reg_ID (
         else if (cpu_en) begin
             out_pc <= in_pc;
             out_instruction <= in_instruction;
+        end
+        else if (is_nop_IF_ID) begin
+            // 插入nop
+            out_pc <= 0;
+            out_instruction <= `NOP;
         end
     end
 
