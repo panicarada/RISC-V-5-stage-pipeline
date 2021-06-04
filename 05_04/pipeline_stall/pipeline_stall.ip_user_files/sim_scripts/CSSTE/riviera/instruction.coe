@@ -1,0 +1,17 @@
+memory_initialization_radix=16;
+memory_initialization_vector=
+06400093,
+403102B3,
+00000013,
+02102423,
+FC40A103,
+001080B3,
+00001237
+
+;addi x1 x0 100					(1)
+;sub x5 x2 x3						(2)
+;addi x0, x0, 0，即NOP	 (3)
+;sw x1 40(x0)						(4)
+;lw x2 -60(x1)					(5)
+;add x1 x1 x1						(6)
+;lui x4 1								(7)

@@ -1,3 +1,0 @@
-/Applications/zju/计算机组成_RISC_V/proj/CPU_pipeline/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Applications/zju/计算机组成_RISC_V/proj/CPU_pipeline/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Applications/zju/计算机组成_RISC_V/proj/CPU_pipeline/cmake-build-debug/CMakeFiles/CPU_pipeline.dir

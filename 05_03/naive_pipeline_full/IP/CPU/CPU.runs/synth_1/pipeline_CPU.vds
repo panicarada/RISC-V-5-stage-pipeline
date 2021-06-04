@@ -1,0 +1,509 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun  4 20:12:08 2021
+# Process ID: 4456
+# Current directory: C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.runs/synth_1
+# Command line: vivado.exe -log pipeline_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_CPU.tcl
+# Log file: C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.runs/synth_1/pipeline_CPU.vds
+# Journal file: C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pipeline_CPU.tcl -notrace
+Command: synth_design -top pipeline_CPU -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1444 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module controller [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/controller.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module immediate_generator [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/immediate_generator.v:5]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module registers [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/registers.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module instruction_fetch [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/instruction_fetch.v:2]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module IF_reg_ID [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/IF_reg_ID.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module controller [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/controller.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module immediate_generator [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/immediate_generator.v:5]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module registers [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/registers.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module instruction_decoder [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/instruction_decoder.v:5]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module ID_reg_EXE [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/ID_reg_EXE.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module execution [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/execution.v:2]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module ALU [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/execution.v:46]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module EXE_reg_MEM [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/EXE_reg_MEM.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module memory_access [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/memory_access.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module MEM_reg_WB [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/MEM_reg_WB.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module write_back [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/write_back.v:3]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 411.590 ; gain = 110.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pipeline_CPU' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/pipeline_CPU.v:11]
+INFO: [Synth 8-638] synthesizing module 'instruction_fetch' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/instruction_fetch.v:2]
+INFO: [Synth 8-256] done synthesizing module 'instruction_fetch' (1#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/instruction_fetch.v:2]
+INFO: [Synth 8-638] synthesizing module 'IF_reg_ID' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/IF_reg_ID.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IF_reg_ID' (2#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/IF_reg_ID.v:3]
+INFO: [Synth 8-638] synthesizing module 'instruction_decoder' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/instruction_decoder.v:5]
+INFO: [Synth 8-638] synthesizing module 'registers' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/registers.v:3]
+INFO: [Synth 8-256] done synthesizing module 'registers' (3#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/registers.v:3]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/controller.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/controller.v:60]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/controller.v:116]
+INFO: [Synth 8-256] done synthesizing module 'controller' (4#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/controller.v:3]
+INFO: [Synth 8-638] synthesizing module 'immediate_generator' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/immediate_generator.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/immediate_generator.v:12]
+INFO: [Synth 8-256] done synthesizing module 'immediate_generator' (5#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/immediate_generator.v:5]
+INFO: [Synth 8-256] done synthesizing module 'instruction_decoder' (6#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/instruction_decoder.v:5]
+INFO: [Synth 8-638] synthesizing module 'ID_reg_EXE' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/ID_reg_EXE.v:3]
+WARNING: [Synth 8-5788] Register out_rs2_address_reg in module ID_reg_EXE is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/ID_reg_EXE.v:63]
+INFO: [Synth 8-256] done synthesizing module 'ID_reg_EXE' (7#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/ID_reg_EXE.v:3]
+INFO: [Synth 8-638] synthesizing module 'execution' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/execution.v:2]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/execution.v:46]
+INFO: [Synth 8-226] default block is never used [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/execution.v:57]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/execution.v:46]
+INFO: [Synth 8-256] done synthesizing module 'execution' (9#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/execution.v:2]
+INFO: [Synth 8-638] synthesizing module 'EXE_reg_MEM' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/EXE_reg_MEM.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXE_reg_MEM' (10#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/EXE_reg_MEM.v:3]
+INFO: [Synth 8-638] synthesizing module 'memory_access' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/memory_access.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/memory_access.v:12]
+INFO: [Synth 8-256] done synthesizing module 'memory_access' (11#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/memory_access.v:3]
+INFO: [Synth 8-638] synthesizing module 'MEM_reg_WB' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/MEM_reg_WB.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEM_reg_WB' (12#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/MEM_reg_WB.v:3]
+INFO: [Synth 8-638] synthesizing module 'write_back' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/write_back.v:3]
+INFO: [Synth 8-256] done synthesizing module 'write_back' (13#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/write_back.v:3]
+WARNING: [Synth 8-5788] Register goddamn_seven_counter_reg in module pipeline_CPU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/pipeline_CPU.v:78]
+WARNING: [Synth 8-3848] Net is_lui_EXE in module/entity pipeline_CPU does not have driver. [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/pipeline_CPU.v:42]
+INFO: [Synth 8-256] done synthesizing module 'pipeline_CPU' (14#1) [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/pipeline_CPU.v:11]
+WARNING: [Synth 8-3331] design immediate_generator has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design immediate_generator has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design immediate_generator has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design immediate_generator has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design immediate_generator has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design immediate_generator has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design immediate_generator has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design registers has unconnected port cpu_en
+WARNING: [Synth 8-3331] design pipeline_CPU has unconnected port is_lui_EXE
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 446.887 ; gain = 145.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 446.887 ; gain = 145.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 446.887 ; gain = 145.543
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Synth 8-5546] ROM "registers_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "instruction_type" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALU_B_option" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "mem_to_regs_option" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "is_write_mem_future" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "is_write_regs_future" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "is_use_rs1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "is_use_rs2" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "branch_type" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_option" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/execution.v:57]
+INFO: [Synth 8-5545] ROM "is_zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "is_branch_EXE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "is_jal_EXE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "is_jalr_EXE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "is_jal_MEM" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "is_jalr_MEM" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_option_reg' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/controller.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_type_reg' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/controller.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'immediate_reg' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/immediate_generator.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_condition_reg' [C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.srcs/sources_1/imports/pipeline_full/memory_access.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 471.012 ; gain = 169.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 22    
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   8 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   9 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 41    
+	   9 Input      1 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pipeline_CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+Module instruction_fetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module IF_reg_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module registers 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module immediate_generator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      1 Bit        Muxes := 1     
+Module ID_reg_EXE 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module execution 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module EXE_reg_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module memory_access 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module MEM_reg_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module write_back 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "instruction_decoder/controller/instruction_type" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "instruction_decoder/controller/ALU_B_option" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "instruction_decoder/controller/mem_to_regs_option" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "instruction_decoder/controller/is_write_mem_future" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "instruction_decoder/controller/is_write_regs_future" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "execution/ALU/is_zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design registers has unconnected port cpu_en
+WARNING: [Synth 8-3331] design pipeline_CPU has unconnected port is_lui_EXE
+INFO: [Synth 8-3886] merging instance 'EXE_reg_MEM/out_pc_4_reg[0]' (FDC) to 'EXE_reg_MEM/out_pc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MEM_reg_WB/out_pc_4_reg[0]' (FDC) to 'MEM_reg_WB/out_pc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs2_address_reg[0]' (FDC) to 'ID_reg_EXE/out_instruction_reg[20]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs2_address_reg[1]' (FDC) to 'ID_reg_EXE/out_instruction_reg[21]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs2_address_reg[2]' (FDC) to 'ID_reg_EXE/out_instruction_reg[22]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs2_address_reg[3]' (FDC) to 'ID_reg_EXE/out_instruction_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs2_address_reg[4]' (FDC) to 'ID_reg_EXE/out_instruction_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs1_address_reg[0]' (FDC) to 'ID_reg_EXE/out_instruction_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs1_address_reg[1]' (FDC) to 'ID_reg_EXE/out_instruction_reg[16]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs1_address_reg[2]' (FDC) to 'ID_reg_EXE/out_instruction_reg[17]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs1_address_reg[3]' (FDC) to 'ID_reg_EXE/out_instruction_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rs1_address_reg[4]' (FDC) to 'ID_reg_EXE/out_instruction_reg[19]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rd_address_reg[0]' (FDC) to 'ID_reg_EXE/out_instruction_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rd_address_reg[1]' (FDC) to 'ID_reg_EXE/out_instruction_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rd_address_reg[2]' (FDC) to 'ID_reg_EXE/out_instruction_reg[9]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rd_address_reg[3]' (FDC) to 'ID_reg_EXE/out_instruction_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ID_reg_EXE/out_rd_address_reg[4]' (FDC) to 'ID_reg_EXE/out_instruction_reg[11]'
+INFO: [Synth 8-3886] merging instance 'EXE_reg_MEM/out_rd_address_reg[0]' (FDC) to 'EXE_reg_MEM/out_instruction_reg[7]'
+INFO: [Synth 8-3886] merging instance 'EXE_reg_MEM/out_rd_address_reg[1]' (FDC) to 'EXE_reg_MEM/out_instruction_reg[8]'
+INFO: [Synth 8-3886] merging instance 'EXE_reg_MEM/out_rd_address_reg[2]' (FDC) to 'EXE_reg_MEM/out_instruction_reg[9]'
+INFO: [Synth 8-3886] merging instance 'EXE_reg_MEM/out_rd_address_reg[3]' (FDC) to 'EXE_reg_MEM/out_instruction_reg[10]'
+INFO: [Synth 8-3886] merging instance 'EXE_reg_MEM/out_rd_address_reg[4]' (FDC) to 'EXE_reg_MEM/out_instruction_reg[11]'
+INFO: [Synth 8-3886] merging instance 'MEM_reg_WB/out_instruction_reg[7]' (FDC) to 'MEM_reg_WB/out_rd_address_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MEM_reg_WB/out_instruction_reg[8]' (FDC) to 'MEM_reg_WB/out_rd_address_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MEM_reg_WB/out_instruction_reg[9]' (FDC) to 'MEM_reg_WB/out_rd_address_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MEM_reg_WB/out_instruction_reg[10]' (FDC) to 'MEM_reg_WB/out_rd_address_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MEM_reg_WB/out_instruction_reg[11]' (FDC) to 'MEM_reg_WB/out_rd_address_reg[4]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    48|
+|3     |LUT1   |    34|
+|4     |LUT2   |    70|
+|5     |LUT3   |    52|
+|6     |LUT4   |    34|
+|7     |LUT5   |   236|
+|8     |LUT6   |   807|
+|9     |MUXF7  |   288|
+|10    |FDCE   |   729|
+|11    |FDPE   |     1|
+|12    |FDRE   |   994|
+|13    |LD     |    40|
+|14    |IBUF   |    66|
+|15    |OBUF   |  1521|
+|16    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+--------------------+------+
+|      |Instance                |Module              |Cells |
++------+------------------------+--------------------+------+
+|1     |top                     |                    |  4924|
+|2     |  EXE_reg_MEM           |EXE_reg_MEM         |   235|
+|3     |  ID_reg_EXE            |ID_reg_EXE          |   637|
+|4     |  IF_reg_ID             |IF_reg_ID           |   126|
+|5     |  MEM_reg_WB            |MEM_reg_WB          |   194|
+|6     |  execution             |execution           |    28|
+|7     |    ALU                 |ALU                 |    12|
+|8     |  instruction_decoder   |instruction_decoder |  1893|
+|9     |    controller          |controller          |     6|
+|10    |    immediate_generator |immediate_generator |    32|
+|11    |    registers           |registers           |  1855|
+|12    |  instruction_fetch     |instruction_fetch   |    73|
+|13    |  memory_access         |memory_access       |     4|
+|14    |  write_back            |write_back          |    32|
++------+------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 16 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 674.492 ; gain = 373.148
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 442 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 40 instances were transformed.
+  LD => LDCE: 40 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 18 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 759.430 ; gain = 470.395
+INFO: [Common 17-1381] The checkpoint 'C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.runs/synth_1/pipeline_CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pipeline_CPU_utilization_synth.rpt -pb pipeline_CPU_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 759.430 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  4 20:12:46 2021...

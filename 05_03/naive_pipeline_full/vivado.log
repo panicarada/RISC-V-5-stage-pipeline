@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun  4 19:17:31 2021
+# Process ID: 10904
+# Current directory: C:/panic/new/lab5/05_03/naive_pipeline_full
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent180 C:\panic\new\lab5\05_03\naive_pipeline_full\naive_pipeline_full.xpr
+# Log file: C:/panic/new/lab5/05_03/naive_pipeline_full/vivado.log
+# Journal file: C:/panic/new/lab5/05_03/naive_pipeline_full\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  4 19:18:11 2021...

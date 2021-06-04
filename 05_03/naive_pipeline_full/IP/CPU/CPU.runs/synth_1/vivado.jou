@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun  4 20:12:08 2021
+# Process ID: 4456
+# Current directory: C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.runs/synth_1
+# Command line: vivado.exe -log pipeline_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_CPU.tcl
+# Log file: C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.runs/synth_1/pipeline_CPU.vds
+# Journal file: C:/panic/new/lab5/05_03/naive_pipeline_full/IP/CPU/CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pipeline_CPU.tcl -notrace

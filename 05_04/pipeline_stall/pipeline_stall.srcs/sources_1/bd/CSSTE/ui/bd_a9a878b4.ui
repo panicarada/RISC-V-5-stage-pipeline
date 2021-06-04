@@ -1,0 +1,149 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port seg_clk -pg 1 -y 1460 -defaultsOSRD
+preplace port led_sout -pg 1 -y 1250 -defaultsOSRD
+preplace port VSYNC -pg 1 -y 400 -defaultsOSRD
+preplace port HSYNC -pg 1 -y 380 -defaultsOSRD
+preplace port RSTN -pg 1 -y 1020 -defaultsOSRD
+preplace port SEG_PEN -pg 1 -y 1500 -defaultsOSRD
+preplace port led_clrn -pg 1 -y 1230 -defaultsOSRD
+preplace port LED_PEN -pg 1 -y 1190 -defaultsOSRD
+preplace port clk_100mhz -pg 1 -y 1040 -defaultsOSRD
+preplace port seg_sout -pg 1 -y 1520 -defaultsOSRD
+preplace port seg_clrn -pg 1 -y 1480 -defaultsOSRD
+preplace port led_clk -pg 1 -y 1210 -defaultsOSRD
+preplace portBus Blue -pg 1 -y 460 -defaultsOSRD
+preplace portBus Red -pg 1 -y 420 -defaultsOSRD
+preplace portBus BTN_y -pg 1 -y 1080 -defaultsOSRD
+preplace portBus SW -pg 1 -y 1100 -defaultsOSRD
+preplace portBus Green -pg 1 -y 440 -defaultsOSRD
+preplace inst U6 -pg 1 -lvl 11 -y 1490 -defaultsOSRD
+preplace inst div11 -pg 1 -lvl 4 -y 1150 -defaultsOSRD
+preplace inst PC11_2 -pg 1 -lvl 5 -y 1300 -defaultsOSRD
+preplace inst U7 -pg 1 -lvl 11 -y 1250 -defaultsOSRD
+preplace inst U8 -pg 1 -lvl 3 -y 1260 -defaultsOSRD
+preplace inst div25 -pg 1 -lvl 10 -y 1440 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 9 -y 950 -defaultsOSRD
+preplace inst sw7_5 -pg 1 -lvl 9 -y 1040 -defaultsOSRD
+preplace inst BTN_OK0 -pg 1 -lvl 2 -y 1170 -defaultsOSRD
+preplace inst U9 -pg 1 -lvl 1 -y 1060 -defaultsOSRD
+preplace inst div1 -pg 1 -lvl 10 -y 1220 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 9 -y 1160 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -y 860 -defaultsOSRD
+preplace inst SW8 -pg 1 -lvl 2 -y 1350 -defaultsOSRD
+preplace inst PC31_2 -pg 1 -lvl 8 -y 70 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 9 -y 840 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 4 -y 1310 -defaultsOSRD
+preplace inst sw0 -pg 1 -lvl 10 -y 1620 -defaultsOSRD
+preplace inst U1 -pg 1 -lvl 7 -y 440 -defaultsOSRD
+preplace inst b2_0 -pg 1 -lvl 8 -y 850 -defaultsOSRD
+preplace inst div6 -pg 1 -lvl 4 -y 970 -defaultsOSRD
+preplace inst U2 -pg 1 -lvl 6 -y 1300 -defaultsOSRD
+preplace inst U3 -pg 1 -lvl 5 -y 890 -defaultsOSRD
+preplace inst div20 -pg 1 -lvl 10 -y 1530 -defaultsOSRD
+preplace inst U4 -pg 1 -lvl 6 -y 1000 -defaultsOSRD
+preplace inst U10 -pg 1 -lvl 5 -y 1090 -defaultsOSRD
+preplace inst U11 -pg 1 -lvl 11 -y 420 -defaultsOSRD
+preplace inst U5 -pg 1 -lvl 10 -y 1000 -defaultsOSRD
+preplace inst div9 -pg 1 -lvl 4 -y 1060 -defaultsOSRD
+preplace inst SW2 -pg 1 -lvl 2 -y 1260 -defaultsOSRD
+preplace netloc U5_LE_out 1 10 1 3290
+preplace netloc U1_is_write_mem_future_EXE 1 7 4 NJ 170 NJ 170 NJ 170 3290
+preplace netloc U4_ram_data_in 1 4 3 1120 1400 NJ 1400 1900
+preplace netloc U1_rs2_data_EXE 1 7 4 2390J 370 NJ 370 NJ 370 N
+preplace netloc U1_instruction_EXE 1 7 4 NJ 210 NJ 210 NJ 210 3280
+preplace netloc util_vector_logic_0_Res 1 4 1 NJ
+preplace netloc U11_vga_b 1 11 1 NJ
+preplace netloc U8_clkdiv 1 3 7 760 1250 1060J 1380 NJ 1380 1950J 1250 NJ 1250 2640 1250 2990
+preplace netloc U4_counter_we 1 4 3 1140 1350 NJ 1350 1920
+preplace netloc xlconcat_1_dout 1 9 1 2900
+preplace netloc U5_point_out 1 10 1 3280
+preplace netloc U10_counter2_OUT 1 5 1 1490
+preplace netloc U7_counter_set 1 4 8 1130 1410 NJ 1410 1960J 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 3740
+preplace netloc U11_vs 1 11 1 NJ
+preplace netloc xlconcat_0_dout 1 9 1 2970J
+preplace netloc U1_rd_address_EXE 1 7 4 2370J 290 NJ 290 NJ 290 N
+preplace netloc U11_vga_g 1 11 1 NJ
+preplace netloc div1_Dout 1 10 1 3320J
+preplace netloc U1_is_jal_EXE 1 7 4 NJ 490 NJ 490 NJ 490 N
+preplace netloc U1_rs2_address_EXE 1 7 4 NJ 350 NJ 350 NJ 350 3360
+preplace netloc U1_is_B_immediate_EXE 1 7 4 2380J 400 NJ 400 NJ 400 3430
+preplace netloc U1_is_jalr_MEM 1 7 4 NJ 650 NJ 650 NJ 650 3340
+preplace netloc U7_LED_out 1 5 7 1560 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 3750
+preplace netloc U10_counter1_OUT 1 5 1 1470
+preplace netloc U7_led_clrn 1 11 1 NJ
+preplace netloc U1_flatten_registers 1 7 4 NJ 750 NJ 750 NJ 750 3280
+preplace netloc U1_instruction_ID 1 7 4 NJ 130 NJ 130 NJ 130 3300
+preplace netloc PC11_2_Dout 1 5 1 NJ
+preplace netloc U1_pc_ID 1 7 4 2390J 120 NJ 120 NJ 120 3430
+preplace netloc U1_pc_MEM 1 7 4 NJ 570 NJ 570 NJ 570 N
+preplace netloc U1_rs1_address_EXE 1 7 4 2390J 310 NJ 310 NJ 310 N
+preplace netloc U1_is_jal_MEM 1 7 4 NJ 630 NJ 630 NJ 630 3350
+preplace netloc U1_immediate_EXE 1 7 4 NJ 450 NJ 450 NJ 450 N
+preplace netloc div20_Dout 1 10 1 3430
+preplace netloc pipeline_CPU_0_is_write_mem_future_MEM 1 5 6 1560 40 NJ 40 2370 10 NJ 10 NJ 10 3420
+preplace netloc SAnti_jitter_0_SW_OK 1 1 9 260 1110 NJ 1110 730J 1240 NJ 1240 1500 1190 NJ 1190 NJ 1190 2630 1620 NJ
+preplace netloc U1_is_write_regs_future_MEM 1 7 4 NJ 610 NJ 610 NJ 610 3360
+preplace netloc U1_rs1_data_EXE 1 7 4 2370J 340 NJ 340 NJ 340 3430
+preplace netloc U4_data_ram_we 1 4 3 1100 1360 NJ 1360 1910
+preplace netloc PC31_2_Dout 1 8 1 2610
+preplace netloc U11_vga_r 1 11 1 NJ
+preplace netloc U11_hs 1 11 1 NJ
+preplace netloc Key_y_0_1 1 0 1 NJ
+preplace netloc U3_douta 1 5 1 1520
+preplace netloc U7_led_clk 1 11 1 NJ
+preplace netloc U6_seg_sout 1 11 1 NJ
+preplace netloc clk_0_1 1 0 11 20 1180 270J 1120 510 1120 750 1370 NJ 1370 1480 1390 NJ 1390 NJ 1390 NJ 1390 NJ 1390 3400J
+preplace netloc U1_Data_out 1 5 6 1550 20 NJ 20 2380 230 NJ 230 2920 250 N
+preplace netloc U1_rd_address_WB 1 7 4 NJ 690 NJ 690 NJ 690 3310
+preplace netloc U4_Cpu_data4bus 1 6 4 1960 1010 NJ 1010 2620J 1090 NJ
+preplace netloc U10_counter_out 1 5 5 1510 1240 NJ 1240 NJ 1240 NJ 1240 2960
+preplace netloc U4_Peripheral_in 1 4 7 1160 1230 NJ 1230 1940 1230 NJ 1230 NJ 1230 2980 1290 NJ
+preplace netloc b2_0_dout 1 8 1 NJ
+preplace netloc U7_led_sout 1 11 1 NJ
+preplace netloc SAnti_jitter_0_BTN_OK 1 1 5 280 920 NJ 920 NJ 920 1090J 970 1500
+preplace netloc div9_Dout 1 4 1 NJ
+preplace netloc RSTN_0_1 1 0 1 NJ
+preplace netloc U2_spo 1 6 5 1930 1100 NJ 1100 NJ 1100 2880J 140 3310
+preplace netloc U8_Clk_CPU 1 3 4 740 410 NJ 410 NJ 410 NJ
+preplace netloc U1_is_write_regs 1 7 4 2360J 720 NJ 720 NJ 720 3300
+preplace netloc U1_ALU_option_EXE 1 7 4 NJ 550 NJ 550 NJ 550 N
+preplace netloc SW8_Dout 1 2 1 510
+preplace netloc SW2_Dout 1 2 1 N
+preplace netloc util_vector_logic_1_Res 1 4 7 1070 1250 NJ 1250 1940J 1260 NJ 1260 NJ 1260 2950 1270 3310J
+preplace netloc SW_0_1 1 0 1 NJ
+preplace netloc U1_is_lui_EXE 1 7 4 NJ 530 NJ 530 NJ 530 N
+preplace netloc U1_instruction_MEM 1 7 4 NJ 590 NJ 590 NJ 590 N
+preplace netloc U1_is_branch_EXE 1 7 4 NJ 470 NJ 470 NJ 470 N
+preplace netloc div11_Dout 1 4 1 1080J
+preplace netloc U6_SEG_PEN 1 11 1 NJ
+preplace netloc U5_Disp_num 1 10 1 3300
+preplace netloc div6_Dout 1 4 1 1080J
+preplace netloc U1_pc_EXE 1 7 4 NJ 150 NJ 150 NJ 150 3410
+preplace netloc U10_counter0_OUT 1 5 1 1460
+preplace netloc U6_seg_clrn 1 11 1 NJ
+preplace netloc U1_rd_address_MEM 1 7 4 2370J 620 NJ 620 NJ 620 3370
+preplace netloc U1_PC_out 1 4 7 1110 30 NJ 30 NJ 30 2390 20 NJ 20 2930 110 N
+preplace netloc U1_write_regs_data 1 7 4 NJ 730 NJ 730 NJ 730 3290
+preplace netloc U1_pc_WB 1 7 4 NJ 670 NJ 670 NJ 670 3330
+preplace netloc U1_instruction_WB 1 7 4 2380J 710 NJ 710 NJ 710 N
+preplace netloc div25_Dout 1 10 1 NJ
+preplace netloc xlconstant_0_dout 1 9 1 NJ
+preplace netloc U6_seg_clk 1 11 1 NJ
+preplace netloc U1_ALU_result_MEM 1 5 6 1540 10 NJ 10 2360 250 NJ 250 2910 270 N
+preplace netloc sw0_Dout 1 10 1 3350J
+preplace netloc U4_GPIOe0000000_we 1 6 4 1940 900 NJ 900 NJ 900 2870J
+preplace netloc SAnti_jitter_0_rst 1 1 10 NJ 1030 500 1170 720J 1200 1090 1210 1530 1200 1950 1200 NJ 1200 2600J 1220 2940 1300 3380
+preplace netloc U1_is_jalr_EXE 1 7 4 NJ 510 NJ 510 NJ 510 N
+preplace netloc BTN_OK0_Dout 1 2 1 490
+preplace netloc U7_LED_PEN 1 11 1 NJ
+preplace netloc U4_GPIOf0000000_we 1 6 5 N 950 NJ 950 2610J 1280 NJ 1280 3390J
+preplace netloc sw7_5_Dout 1 9 1 2890J
+preplace netloc U4_ram_addr 1 4 3 1150 1220 NJ 1220 1890
+preplace netloc U1_is_write_regs_future_EXE 1 7 4 NJ 410 NJ 410 NJ 410 3360
+levelinfo -pg 1 0 140 390 620 910 1320 1730 2160 2500 2770 3150 3590 3770 -top 0 -bot 1670
+",
+}
+0

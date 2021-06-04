@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun  1 11:15:31 2021
+# Process ID: 1840
+# Current directory: C:/Computer_Organization/real_lab5/05_04/pipeline_stall/IP/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3652 C:\Computer_Organization\real_lab5\05_04\pipeline_stall\IP\VGA\VGA.xpr
+# Log file: C:/Computer_Organization/real_lab5/05_04/pipeline_stall/IP/VGA/vivado.log
+# Journal file: C:/Computer_Organization/real_lab5/05_04/pipeline_stall/IP/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Computer_Organization/real_lab5/05_04/pipeline_stall/IP/VGA/VGA.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Computer_Organization/lab05_04/pipeline_stall/VGA' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Computer_Organization/real_lab5/05_04/pipeline_stall/IP/VGA/VGA.srcs/sources_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:VGA:1.0'. The one found in IP location 'c:/Computer_Organization/real_lab5/05_04/pipeline_stall/IP/VGA/VGA.srcs/sources_1' will take precedence over the same IP in location c:/Computer_Organization/real_lab5/05_04/pipeline_stall/IP/VGA/VGA.srcs/sources_1/imports/Framework
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 734.348 ; gain = 57.766
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir c:/computer_organization/real_lab5/05_04/pipeline_stall/ip/vga/vga.srcs/sources_1 -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-1842] HDL Parser: Found include file "imports/Framework/define.vh" from the top-level HDL file.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  1 11:17:21 2021...
